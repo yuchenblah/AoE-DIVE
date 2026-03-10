@@ -1,0 +1,26 @@
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_1_0.5,parallelize=True  --tasks arc_challenge    --num_fewshot 25  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_2_0.75,parallelize=True  --tasks arc_challenge    --num_fewshot 25  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_1,parallelize=True  --tasks arc_challenge    --num_fewshot 25  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_2,parallelize=True  --tasks arc_challenge    --num_fewshot 25  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results/eval_cache
+
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_1_0.5,parallelize=True  --tasks hellaswag    --num_fewshot 10  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_2_0.75,parallelize=True  --tasks hellaswag    --num_fewshot 10  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_1,parallelize=True  --tasks hellaswag    --num_fewshot 10  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_2,parallelize=True  --tasks hellaswag    --num_fewshot 10  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results/eval_cache
+
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_1_0.5,parallelize=True  --tasks mmlu    --num_fewshot 5  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_1_0.5_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/tinyllama_dive/dive_8_2_0.75,parallelize=True  --tasks mmlu    --num_fewshot 5  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/dive_8_2_0.75_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_1,parallelize=True  --tasks mmlu    --num_fewshot 5  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_1_results/eval_cache
+
+CUDA_VISIBLE_DEVICES=1,6 lm_eval --model hf     --model_args pretrained=/data9/fengyuchen/new_pruned_smoe_models/llama_moe_smoe/llama_moe_independent_8_2,parallelize=True  --tasks mmlu    --num_fewshot 5  --batch_size auto     --output_path /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results     --use_cache /data9/fengyuchen/AoE-DIVE/AoE_lmeh_results/llama_moe_independent_8_2_results/eval_cache
