@@ -154,6 +154,10 @@ class PrunedLlamaSMoEBlock(nn.Module):
 
         gating_weights, indices = torch.topk(logits, self.num_selects, dim=-1)  # (tokens, k)
         gating_weights = F.softmax(gating_weights, dim=-1)
+        
+        # with open("/data9/fengyuchen/AoE-DIVE/aoe_cases.json", "a") as f:
+        #     json.dump(indices.cpu().tolist(), f)
+        #     f.write("\n")
 
         results = torch.zeros_like(flat_x)
         
